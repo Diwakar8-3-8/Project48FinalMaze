@@ -220,16 +220,15 @@ if(bluro.isTouching(m46)||bluro.isTouching(m47)||bluro.isTouching(m48)||bluro.is
   bluro.y = 60;
 }
 
-if(bluro.isTouching(m90)){
 
-  //Miss when I use the image YOU WIN it is coming behind the mazes and not very visible. What can I do?
-  //image(ywImg,1,1,1280,610)
-  //text("YOU WIN", 640,305);
-}
   edges = createEdgeSprites();
   //image(mazeImg, 20,25,1240,600);
   image(trophyImg, 1140,430,100,100);
   drawSprites();
+  
+  if(bluro.isTouching(m90)){
+    image(ywImg,1,1,1280,610)
+  }
   }
 
   function keyPressed(){
